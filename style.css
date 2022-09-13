@@ -1,0 +1,126 @@
+:root{
+--darkMod:#374353;
+--whiteMod:white;
+--secCol:#8c9695;
+--blueCol:#0082f2;
+
+
+}
+body{
+    font-family: 'Tajawal', sans-serif;
+    background: #E6DADA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.paren{
+    background-color: var(--darkMod);
+    width:300px;
+    padding:20px 8px ;
+border-radius:15px;
+position: relative;
+left:50%;
+top:100px ;
+transform: translateX(-50%);
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.paren.toggle{
+    background-color:var(--whiteMod);
+}
+
+.paren  .text{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:end;
+    padding:10px 20px;
+height:70px;
+
+   
+}
+.paren .text > p{
+    color: white;
+    font-weight:500 ;
+    font-size:40px;
+    margin: 0;
+    
+   
+}
+.paren .text >p.toggle{
+    color: var(--blueCol);
+}
+.paren .text span{height:20px ;}
+.paren .text span p{
+    color:#8c9695;
+   margin:5px 0 0 0 ;
+  
+}
+.icons{
+   display: flex;
+   flex-wrap:wrap;
+   gap:20px ;
+   padding:25px 5px 5px 5px;
+position: relative;
+left:12px;
+}
+.btn { 
+    height:50px ;
+    width:50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:15px ;
+color: white; 
+    box-shadow:3px 3px 10px black,-1.5px -1.5px 8px var(--secCol) ;
+
+   user-select: none;
+   font-size: 20px;
+   
+}
+.btn.toggle{
+    color: black;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.calc{color:var(--secCol)}
+.calc.toggle{
+    color: var(--blueCol);
+}
+.btn:first-of-type{
+width:120px ;
+}
+.fa-moon{
+    color: white;
+    font-size:20px ;
+    position: relative;
+    left: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+.fa-moon.active{
+    color:black;
+}
+.fa-moon.active  {
+  color:black;
+}
+.info{
+    position: relative;
+    width: fit-content;
+    left:50% ;
+    transform: translateX(-40%);
+    top:115px ;
+    user-select: none;
+    
+}
+.info a{
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    padding: 5px;
+    transition:0.3s;
+}
+.info a:hover{
+    color: white;
+}
